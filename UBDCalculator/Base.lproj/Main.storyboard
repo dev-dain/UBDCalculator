@@ -1,24 +1,202 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bPC-wA-TuF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--사용법-->
+        <scene sceneID="1Hh-fq-IfT">
+            <objects>
+                <navigationController id="QB9-Oh-5s3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="사용법" id="xGa-ug-gd5"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="d5Z-yY-fLP">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="mxt-xq-slv" kind="relationship" relationship="rootViewController" id="Ld3-C0-pf4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xDk-Sh-8oO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-370" y="307"/>
+        </scene>
+        <!--사용법-->
+        <scene sceneID="p86-3R-yRE">
+            <objects>
+                <viewController id="mxt-xq-slv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0lJ-yG-1gD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="환영합니다!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQv-PD-JhS">
+                                <rect key="frame" x="118" y="117" width="139" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PqO-yR-p9d">
+                                <rect key="frame" x="118" y="233" width="64" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="빠르고 정확하게, 오직 UBD 계산기에서." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="90B-5v-4R2">
+                                <rect key="frame" x="67" y="318" width="240" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6Bp-NM-oDQ">
+                                <rect key="frame" x="53" y="174" width="268" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">이 놀라운 계산기는 사용자가 입력하는 숫자를 UBD 단위로 환산해줍니다. 
+
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vR-Nw-TNE">
+                                <rect key="frame" x="205" y="247" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="UBD란?"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="g3j-Ts-m9R"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="사용법" id="Xjj-tP-avg"/>
+                    <navigationItem key="navigationItem" title="사용법" id="k54-0P-ZES">
+                        <barButtonItem key="rightBarButtonItem" title="Contact" id="2nW-Hc-w7m">
+                            <connections>
+                                <segue destination="HcC-bh-y0w" kind="show" id="Ktj-Zh-JHh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B3a-9v-Gyn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439" y="308"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="4hA-1P-f5R">
+            <objects>
+                <tabBarController id="bPC-wA-TuF" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wa6-AJ-1Qz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="PKD-8k-V6w"/>
+                        <segue destination="QB9-Oh-5s3" kind="relationship" relationship="viewControllers" id="Ko8-Gr-1lH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGm-ur-WOX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1321" y="-64"/>
+        </scene>
+        <!--계산기-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UBDCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rqc-Sx-JI7">
+                                <rect key="frame" x="127.5" y="124" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="pwl-65-qTx"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원본값" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqn-aQ-1XA">
+                                <rect key="frame" x="53" y="128.5" width="45" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="Pmg-YP-tS7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WS-la-xss">
+                                <rect key="frame" x="298" y="124" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="cgy-0S-oXy"/>
+                                </constraints>
+                                <state key="normal" title="변환"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="결과" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5H-WQ-Iob">
+                                <rect key="frame" x="172" y="260" width="30" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Now-Mo-Z0i">
+                                <rect key="frame" x="67" y="333.5" width="241" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="241" id="SMF-8F-4h3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rqc-Sx-JI7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="104" id="28h-df-pUP"/>
+                            <constraint firstItem="2WS-la-xss" firstAttribute="centerY" secondItem="Rqc-Sx-JI7" secondAttribute="centerY" id="3a7-ts-5fx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2WS-la-xss" secondAttribute="trailing" constant="47" id="7aW-CZ-kFS"/>
+                            <constraint firstItem="Now-Mo-Z0i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9PE-iD-syB"/>
+                            <constraint firstItem="yqn-aQ-1XA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="53" id="Xx1-zL-ZV9"/>
+                            <constraint firstItem="Now-Mo-Z0i" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oED-Lq-UJV"/>
+                            <constraint firstItem="yqn-aQ-1XA" firstAttribute="centerY" secondItem="Rqc-Sx-JI7" secondAttribute="centerY" id="qC7-a9-qv1"/>
+                            <constraint firstItem="Rqc-Sx-JI7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vpQ-6N-riQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="계산기" id="yBA-JB-pEh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-370" y="-404"/>
+        </scene>
+        <!--Contact-->
+        <scene sceneID="M2Q-QP-7oN">
+            <objects>
+                <viewController id="HcC-bh-y0w" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UBT-WK-wsF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYR-0z-dpQ">
+                                <rect key="frame" x="146.5" y="318.5" width="82" height="30"/>
+                                <state key="normal" title="개발자 깃허브"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nYR-0z-dpQ" firstAttribute="centerX" secondItem="UBT-WK-wsF" secondAttribute="centerX" id="WYV-6W-yLl"/>
+                            <constraint firstItem="nYR-0z-dpQ" firstAttribute="centerY" secondItem="UBT-WK-wsF" secondAttribute="centerY" id="uYy-Mg-z9u"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HjB-6Z-Iak"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Contact" id="A4f-3S-kFs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vNN-3U-SX3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="306"/>
         </scene>
     </scenes>
 </document>
