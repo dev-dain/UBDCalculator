@@ -18,6 +18,7 @@
 		A7522D8522EAC32E00353E96 /* UBD_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7522D8422EAC32E00353E96 /* UBD_VC.swift */; };
 		A7522D8C22EAC44A00353E96 /* what_is_ubd-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7522D8822EAC44A00353E96 /* what_is_ubd-60@3x.png */; };
 		A7522D8F22EAC5A600353E96 /* GithubVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7522D8E22EAC5A600353E96 /* GithubVC.swift */; };
+		A7F7A30922EAD43400A2ED24 /* ubd_cal-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7F7A30822EAD43400A2ED24 /* ubd_cal-60@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		A7522D8422EAC32E00353E96 /* UBD_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBD_VC.swift; sourceTree = "<group>"; };
 		A7522D8822EAC44A00353E96 /* what_is_ubd-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "what_is_ubd-60@3x.png"; path = "Assets.xcassets/what_is_ubd-60@3x.png"; sourceTree = "<group>"; };
 		A7522D8E22EAC5A600353E96 /* GithubVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubVC.swift; sourceTree = "<group>"; };
+		A7F7A30822EAD43400A2ED24 /* ubd_cal-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ubd_cal-60@2x.png"; path = "../../../.Trash/ubd_cal-60@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		A7348A4F22E5F4C80070CE42 /* UBDCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				A7F7A30822EAD43400A2ED24 /* ubd_cal-60@2x.png */,
 				A7522D8822EAC44A00353E96 /* what_is_ubd-60@3x.png */,
 				A7348A5022E5F4C80070CE42 /* AppDelegate.swift */,
 				A7348A5222E5F4C80070CE42 /* ViewController.swift */,
@@ -243,6 +246,7 @@
 			files = (
 				A7348A5B22E5F4CA0070CE42 /* LaunchScreen.storyboard in Resources */,
 				A7348A5822E5F4CA0070CE42 /* Assets.xcassets in Resources */,
+				A7F7A30922EAD43400A2ED24 /* ubd_cal-60@2x.png in Resources */,
 				A7522D8C22EAC44A00353E96 /* what_is_ubd-60@3x.png in Resources */,
 				A7348A5622E5F4C80070CE42 /* Main.storyboard in Resources */,
 			);

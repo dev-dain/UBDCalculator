@@ -35,46 +35,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="환영합니다!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQv-PD-JhS">
-                                <rect key="frame" x="118" y="117" width="139" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PqO-yR-p9d">
-                                <rect key="frame" x="105" y="233" width="77" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="빠르고 정확하게, 오직 UBD 계산기에서." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="90B-5v-4R2">
-                                <rect key="frame" x="67" y="318" width="240" height="31"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="빠르고 정확하게, 오직 UBD 계산기에서." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90B-5v-4R2">
+                                <rect key="frame" x="67.5" y="389" width="240" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6Bp-NM-oDQ">
-                                <rect key="frame" x="53" y="174" width="268" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" text="이 놀라운 계산기는 사용자가 입력하는 숫자를 UBD 단위로 환산해줍니다." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Bp-NM-oDQ">
+                                <rect key="frame" x="53.5" y="174" width="268" height="54"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">이 놀라운 계산기는 사용자가 입력하는 숫자를 UBD 단위로 환산해줍니다. 
-
-</string>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="268" id="xVz-ft-q8W"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vR-Nw-TNE">
-                                <rect key="frame" x="205" y="256" width="52" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vR-Nw-TNE">
+                                <rect key="frame" x="161.5" y="318.5" width="52" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="ncV-22-fvP"/>
+                                </constraints>
                                 <state key="normal" title="UBD란?"/>
                                 <connections>
                                     <action selector="what_is_ubd:" destination="mxt-xq-slv" eventType="touchUpInside" id="vyh-Um-zrO"/>
                                     <segue destination="a9L-ih-V3F" kind="show" id="D3y-ea-fEu"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="환영합니다!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQv-PD-JhS">
+                                <rect key="frame" x="118" y="118" width="139" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="p66-3I-je2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PqO-yR-p9d">
+                                <rect key="frame" x="149" y="233" width="77" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="Gsc-He-2AC"/>
+                                    <constraint firstAttribute="width" constant="77" id="esq-rh-egq"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="PqO-yR-p9d" firstAttribute="top" secondItem="6Bp-NM-oDQ" secondAttribute="bottom" constant="5" id="01Y-qp-0ex"/>
+                            <constraint firstItem="6Bp-NM-oDQ" firstAttribute="centerX" secondItem="0lJ-yG-1gD" secondAttribute="centerX" id="1Da-nc-60f"/>
+                            <constraint firstItem="PqO-yR-p9d" firstAttribute="centerX" secondItem="0lJ-yG-1gD" secondAttribute="centerX" id="FNc-qW-6y5"/>
+                            <constraint firstItem="TQv-PD-JhS" firstAttribute="centerX" secondItem="0lJ-yG-1gD" secondAttribute="centerX" id="Fdu-HN-pOe"/>
+                            <constraint firstItem="7vR-Nw-TNE" firstAttribute="centerY" secondItem="0lJ-yG-1gD" secondAttribute="centerY" id="W1P-5B-wM6"/>
+                            <constraint firstItem="7vR-Nw-TNE" firstAttribute="centerX" secondItem="0lJ-yG-1gD" secondAttribute="centerX" id="b2o-vq-HLC"/>
+                            <constraint firstItem="7vR-Nw-TNE" firstAttribute="top" secondItem="PqO-yR-p9d" secondAttribute="bottom" constant="8.5" id="gl7-z6-gWe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="g3j-Ts-m9R"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="u6E-Bx-Bmb" appends="YES" id="Lze-01-FXF"/>
@@ -127,58 +142,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rqc-Sx-JI7">
-                                <rect key="frame" x="127.5" y="124" width="120" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="pwl-65-qTx"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원본값" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqn-aQ-1XA">
                                 <rect key="frame" x="53" y="128.5" width="45" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="45" id="Pmg-YP-tS7"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="결과" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5H-WQ-Iob">
-                                <rect key="frame" x="84" y="260" width="207" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Now-Mo-Z0i">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Now-Mo-Z0i">
                                 <rect key="frame" x="67" y="333.5" width="241" height="0.0"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="241" id="SMF-8F-4h3"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WS-la-xss">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WS-la-xss">
                                 <rect key="frame" x="278" y="124" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="변환"/>
                                 <connections>
                                     <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xkq-dd-sLn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결과" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5H-WQ-Iob">
+                                <rect key="frame" x="79.5" y="258" width="216" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="uBc-1J-29G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rqc-Sx-JI7">
+                                <rect key="frame" x="127.5" y="124" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="gI1-xd-AIg"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="Rqc-Sx-JI7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="104" id="28h-df-pUP"/>
-                            <constraint firstItem="Now-Mo-Z0i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9PE-iD-syB"/>
-                            <constraint firstItem="yqn-aQ-1XA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="53" id="Xx1-zL-ZV9"/>
-                            <constraint firstItem="Now-Mo-Z0i" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oED-Lq-UJV"/>
-                            <constraint firstItem="yqn-aQ-1XA" firstAttribute="centerY" secondItem="Rqc-Sx-JI7" secondAttribute="centerY" id="qC7-a9-qv1"/>
-                            <constraint firstItem="Rqc-Sx-JI7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vpQ-6N-riQ"/>
+                            <constraint firstItem="Rqc-Sx-JI7" firstAttribute="leading" secondItem="yqn-aQ-1XA" secondAttribute="trailing" constant="29.5" id="4W7-P5-W9y"/>
+                            <constraint firstItem="n5H-WQ-Iob" firstAttribute="top" secondItem="Rqc-Sx-JI7" secondAttribute="bottom" constant="104" id="Dpx-p6-W47"/>
+                            <constraint firstItem="2WS-la-xss" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="104" id="EgT-cJ-irA"/>
+                            <constraint firstItem="Rqc-Sx-JI7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IHS-Co-FFP"/>
+                            <constraint firstItem="n5H-WQ-Iob" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NqY-hU-zQs"/>
+                            <constraint firstItem="2WS-la-xss" firstAttribute="leading" secondItem="Rqc-Sx-JI7" secondAttribute="trailing" constant="30.5" id="XOR-UZ-wrT"/>
+                            <constraint firstItem="Rqc-Sx-JI7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="104" id="iBr-cA-lgQ"/>
+                            <constraint firstItem="yqn-aQ-1XA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="108.5" id="yeM-Ub-nze"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
