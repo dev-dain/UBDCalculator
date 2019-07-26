@@ -14,6 +14,10 @@
 		A7348A5B22E5F4CA0070CE42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7348A5922E5F4CA0070CE42 /* LaunchScreen.storyboard */; };
 		A7348A6622E5F4CA0070CE42 /* UBDCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7348A6522E5F4CA0070CE42 /* UBDCalculatorTests.swift */; };
 		A7348A7122E5F4CA0070CE42 /* UBDCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7348A7022E5F4CA0070CE42 /* UBDCalculatorUITests.swift */; };
+		A7522D8122EAC0CF00353E96 /* Nav1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7522D8022EAC0CF00353E96 /* Nav1VC.swift */; };
+		A7522D8522EAC32E00353E96 /* UBD_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7522D8422EAC32E00353E96 /* UBD_VC.swift */; };
+		A7522D8C22EAC44A00353E96 /* what_is_ubd-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7522D8822EAC44A00353E96 /* what_is_ubd-60@3x.png */; };
+		A7522D8F22EAC5A600353E96 /* GithubVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7522D8E22EAC5A600353E96 /* GithubVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		A7348A6C22E5F4CA0070CE42 /* UBDCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UBDCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7348A7022E5F4CA0070CE42 /* UBDCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBDCalculatorUITests.swift; sourceTree = "<group>"; };
 		A7348A7222E5F4CA0070CE42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7522D8022EAC0CF00353E96 /* Nav1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nav1VC.swift; sourceTree = "<group>"; };
+		A7522D8422EAC32E00353E96 /* UBD_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBD_VC.swift; sourceTree = "<group>"; };
+		A7522D8822EAC44A00353E96 /* what_is_ubd-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "what_is_ubd-60@3x.png"; path = "Assets.xcassets/what_is_ubd-60@3x.png"; sourceTree = "<group>"; };
+		A7522D8E22EAC5A600353E96 /* GithubVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +105,16 @@
 		A7348A4F22E5F4C80070CE42 /* UBDCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				A7522D8822EAC44A00353E96 /* what_is_ubd-60@3x.png */,
 				A7348A5022E5F4C80070CE42 /* AppDelegate.swift */,
 				A7348A5222E5F4C80070CE42 /* ViewController.swift */,
 				A7348A5422E5F4C80070CE42 /* Main.storyboard */,
 				A7348A5722E5F4CA0070CE42 /* Assets.xcassets */,
 				A7348A5922E5F4CA0070CE42 /* LaunchScreen.storyboard */,
 				A7348A5C22E5F4CA0070CE42 /* Info.plist */,
+				A7522D8022EAC0CF00353E96 /* Nav1VC.swift */,
+				A7522D8422EAC32E00353E96 /* UBD_VC.swift */,
+				A7522D8E22EAC5A600353E96 /* GithubVC.swift */,
 			);
 			path = UBDCalculator;
 			sourceTree = "<group>";
@@ -231,6 +243,7 @@
 			files = (
 				A7348A5B22E5F4CA0070CE42 /* LaunchScreen.storyboard in Resources */,
 				A7348A5822E5F4CA0070CE42 /* Assets.xcassets in Resources */,
+				A7522D8C22EAC44A00353E96 /* what_is_ubd-60@3x.png in Resources */,
 				A7348A5622E5F4C80070CE42 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7348A5322E5F4C80070CE42 /* ViewController.swift in Sources */,
+				A7522D8F22EAC5A600353E96 /* GithubVC.swift in Sources */,
+				A7522D8522EAC32E00353E96 /* UBD_VC.swift in Sources */,
+				A7522D8122EAC0CF00353E96 /* Nav1VC.swift in Sources */,
 				A7348A5122E5F4C80070CE42 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

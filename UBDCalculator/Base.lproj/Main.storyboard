@@ -14,7 +14,7 @@
         <scene sceneID="1Hh-fq-IfT">
             <objects>
                 <navigationController id="QB9-Oh-5s3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="사용법" id="xGa-ug-gd5"/>
+                    <tabBarItem key="tabBarItem" title="사용법" image="bicycle-rider" id="xGa-ug-gd5"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="d5Z-yY-fLP">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -30,7 +30,7 @@
         <!--사용법-->
         <scene sceneID="p86-3R-yRE">
             <objects>
-                <viewController id="mxt-xq-slv" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Nav1VC" id="mxt-xq-slv" customClass="Nav1VC" customModule="UBDCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0lJ-yG-1gD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,7 +43,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PqO-yR-p9d">
-                                <rect key="frame" x="118" y="233" width="64" height="59"/>
+                                <rect key="frame" x="105" y="233" width="77" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="빠르고 정확하게, 오직 UBD 계산기에서." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="90B-5v-4R2">
@@ -64,26 +64,42 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vR-Nw-TNE">
-                                <rect key="frame" x="205" y="247" width="52" height="30"/>
+                                <rect key="frame" x="205" y="256" width="52" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="UBD란?"/>
+                                <connections>
+                                    <action selector="what_is_ubd:" destination="mxt-xq-slv" eventType="touchUpInside" id="vyh-Um-zrO"/>
+                                    <segue destination="a9L-ih-V3F" kind="show" id="D3y-ea-fEu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="g3j-Ts-m9R"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="u6E-Bx-Bmb" appends="YES" id="Lze-01-FXF"/>
+                        </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="사용법" id="Xjj-tP-avg"/>
+                    <tabBarItem key="tabBarItem" title="사용법" image="bicycle-rider" id="Xjj-tP-avg"/>
                     <navigationItem key="navigationItem" title="사용법" id="k54-0P-ZES">
                         <barButtonItem key="rightBarButtonItem" title="Contact" id="2nW-Hc-w7m">
                             <connections>
-                                <segue destination="HcC-bh-y0w" kind="show" id="Ktj-Zh-JHh"/>
+                                <segue destination="HcC-bh-y0w" kind="show" id="WdW-vt-nBS"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="img" destination="PqO-yR-p9d" id="lst-CY-ut9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B3a-9v-Gyn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="u6E-Bx-Bmb">
+                    <connections>
+                        <action selector="go_github_view:" destination="mxt-xq-slv" id="bwb-qv-Yr3"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="439" y="308"/>
+            <point key="canvasLocation" x="437.60000000000002" y="307.1964017991005"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="4hA-1P-f5R">
@@ -155,6 +171,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Rqc-Sx-JI7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="104" id="28h-df-pUP"/>
                             <constraint firstItem="Now-Mo-Z0i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9PE-iD-syB"/>
@@ -165,7 +182,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="계산기" id="yBA-JB-pEh"/>
+                    <tabBarItem key="tabBarItem" title="계산기" image="calculator" id="yBA-JB-pEh"/>
                     <connections>
                         <outlet property="inputField" destination="Rqc-Sx-JI7" id="BEJ-53-hWt"/>
                         <outlet property="outputLabel" destination="n5H-WQ-Iob" id="iW1-Sz-igx"/>
@@ -175,31 +192,51 @@
             </objects>
             <point key="canvasLocation" x="-370.39999999999998" y="-404.34782608695656"/>
         </scene>
-        <!--Contact-->
+        <!--개발자 깃허브-->
         <scene sceneID="M2Q-QP-7oN">
             <objects>
-                <viewController id="HcC-bh-y0w" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GithubVC" id="HcC-bh-y0w" customClass="GithubVC" customModule="UBDCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UBT-WK-wsF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYR-0z-dpQ">
-                                <rect key="frame" x="146.5" y="318.5" width="82" height="30"/>
-                                <state key="normal" title="개발자 깃허브"/>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="nYR-0z-dpQ" firstAttribute="centerX" secondItem="UBT-WK-wsF" secondAttribute="centerX" id="WYV-6W-yLl"/>
-                            <constraint firstItem="nYR-0z-dpQ" firstAttribute="centerY" secondItem="UBT-WK-wsF" secondAttribute="centerY" id="uYy-Mg-z9u"/>
-                        </constraints>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="HjB-6Z-Iak"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="0SB-Rd-Fbl" appends="YES" id="Dl1-v4-oVy"/>
+                        </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Contact" id="A4f-3S-kFs"/>
+                    <navigationItem key="navigationItem" title="개발자 깃허브" id="A4f-3S-kFs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vNN-3U-SX3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="0SB-Rd-Fbl">
+                    <connections>
+                        <action selector="go_nav1_view:" destination="HcC-bh-y0w" id="VbD-zh-LKx"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1186" y="306"/>
+            <point key="canvasLocation" x="1184.8" y="305.39730134932535"/>
+        </scene>
+        <!--자전차왕 엄복동-->
+        <scene sceneID="3ul-ZQ-Z59">
+            <objects>
+                <viewController id="a9L-ih-V3F" customClass="UBD_VC" customModule="UBDCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4KK-sx-djc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="JID-zp-lWS"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="자전차왕 엄복동" id="7cU-jh-3aS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4i8-4K-zV1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1185" y="-404"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bicycle-rider" width="32" height="32"/>
+        <image name="calculator" width="32" height="32"/>
+    </resources>
 </document>
